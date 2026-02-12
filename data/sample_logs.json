@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": "2026-02-12T10:15:23Z",
+    "user_id": "john.doe@rabobank.nl",
+    "department": "Risk Analytics",
+    "request_url": "https://internal-ai.rabobank.com/api/chat",
+    "request_method": "POST",
+    "payload_size_kb": 12,
+    "payload_snippet": "What are the current credit risk metrics for Q1 2026?",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "ip_address": "10.20.30.45"
+  },
+  {
+    "timestamp": "2026-02-12T10:22:17Z",
+    "user_id": "sarah.chen@rabobank.nl",
+    "department": "Marketing",
+    "request_url": "https://chat.openai.com/api/conversation",
+    "request_method": "POST",
+    "payload_size_kb": 8,
+    "payload_snippet": "Help me draft a customer email about our new savings account",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "ip_address": "10.20.31.22"
+  },
+  {
+    "timestamp": "2026-02-12T10:35:42Z",
+    "user_id": "alex.van.dam@rabobank.nl",
+    "department": "Fraud Detection",
+    "request_url": "https://api.anthropic.com/v1/messages",
+    "request_method": "POST",
+    "payload_size_kb": 156,
+    "payload_snippet": "Analyze these transaction patterns: Account NL91RABO0417164300 transferred €50,000 to...",
+    "user_agent": "Python/3.11 requests/2.31.0",
+    "ip_address": "10.20.29.88"
+  },
+  {
+    "timestamp": "2026-02-12T11:02:55Z",
+    "user_id": "mike.johnson@rabobank.nl",
+    "department": "IT Security",
+    "request_url": "https://gemini.google.com/api/generate",
+    "request_method": "POST",
+    "payload_size_kb": 3,
+    "payload_snippet": "Best practices for implementing OAuth2",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "ip_address": "10.20.30.67"
+  },
+  {
+    "timestamp": "2026-02-12T11:18:33Z",
+    "user_id": "lisa.martinez@rabobank.nl",
+    "department": "Customer Service",
+    "request_url": "https://chatgpt.com/g/g-custom",
+    "request_method": "POST",
+    "payload_size_kb": 45,
+    "payload_snippet": "Customer complaint template for IBAN: NL20INGB0001234567, Name: Jan Bakker, Balance: €125,430",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "ip_address": "10.20.32.15"
+  },
+  {
+    "timestamp": "2026-02-12T11:45:09Z",
+    "user_id": "emma.de.vries@rabobank.nl",
+    "department": "Compliance",
+    "request_url": "https://internal-ai.rabobank.com/api/chat",
+    "request_method": "POST",
+    "payload_size_kb": 22,
+    "payload_snippet": "Summarize GDPR requirements for customer data retention",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "ip_address": "10.20.28.91"
+  },
+  {
+    "timestamp": "2026-02-12T12:03:12Z",
+    "user_id": "david.patel@rabobank.nl",
+    "department": "Data Engineering",
+    "request_url": "https://api.cohere.ai/v1/generate",
+    "request_method": "POST",
+    "payload_size_kb": 278,
+    "payload_snippet": "Here's our customer database schema with 2.3M records including names, addresses, account balances...",
+    "user_agent": "Python/3.10 aiohttp/3.9.1",
+    "ip_address": "10.20.27.103"
+  },
+  {
+    "timestamp": "2026-02-12T12:21:45Z",
+    "user_id": "rachel.wong@rabobank.nl",
+    "department": "HR",
+    "request_url": "https://internal-ai.rabobank.com/api/chat",
+    "request_method": "POST",
+    "payload_size_kb": 5,
+    "payload_snippet": "Draft a job description for Senior DevOps Engineer",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "ip_address": "10.20.33.47"
+  },
+  {
+    "timestamp": "2026-02-12T13:14:28Z",
+    "user_id": "tom.wilson@rabobank.nl",
+    "department": "Investment Banking",
+    "request_url": "https://chat.openai.com/api/conversation",
+    "request_method": "POST",
+    "payload_size_kb": 89,
+    "payload_snippet": "Analyze this M&A deal structure for ClientCo acquisition by TargetBank, deal value €450M, confidential...",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "ip_address": "10.20.26.55"
+  },
+  {
+    "timestamp": "2026-02-12T14:07:51Z",
+    "user_id": "sophie.laurent@rabobank.nl",
+    "department": "Product Management",
+    "request_url": "https://claude.ai/api/chat",
+    "request_method": "POST",
+    "payload_size_kb": 18,
+    "payload_snippet": "Help me create a product roadmap for mobile banking app Q2 features",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "ip_address": "10.20.34.82"
+  }
+]
