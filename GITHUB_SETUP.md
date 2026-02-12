@@ -6,7 +6,7 @@
 
 1. Go to [GitHub](https://github.com/new)
 2. Repository name: `ai-sentinel`
-3. Description: `Shadow AI Detection & Mitigation Platform for Rabobank`
+3. Description: `Shadow AI Detection & Mitigation Platform for SecureBank`
 4. Make it **Public** (to showcase to interviewers)
 5. **Do NOT** initialize with README (we already have one)
 6. Click "Create repository"
@@ -39,11 +39,11 @@ git push -u origin main
 #### Add Topics (for discoverability)
 1. Go to your repository page
 2. Click the gear icon next to "About"
-3. Add topics: `ai`, `security`, `rabobank`, `shadow-ai`, `gpt4`, `streamlit`, `python`
+3. Add topics: `ai`, `security`, `SecureBank`, `shadow-ai`, `gpt4`, `streamlit`, `python`
 
 #### Add Repository Description
 ```
-Shadow AI Detection & Mitigation Platform - Rabobank Interview Project. Built with GPT-4, Streamlit, and Python.
+Shadow AI Detection & Mitigation Platform - SecureBank Interview Project. Built with GPT-4, Streamlit, and Python.
 ```
 
 #### Enable GitHub Pages (Optional - for docs)
@@ -89,7 +89,7 @@ jobs:
 
 ## Interview Demonstration URL
 
-Share this with Rabobank:
+Share this with SecureBank:
 ```
 https://github.com/YOUR-USERNAME/ai-sentinel
 ```

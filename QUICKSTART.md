@@ -119,7 +119,7 @@ Create a JSON file with this format:
 [
   {
     "timestamp": "2026-02-12T10:15:23Z",
-    "user_id": "user@rabobank.nl",
+    "user_id": "user@SecureBank.nl",
     "department": "Engineering",
     "request_url": "https://chat.openai.com/api/conversation",
     "request_method": "POST",
@@ -189,7 +189,7 @@ docker run -p 8501:8501 --env-file .env ai-sentinel
 
 **🎉 You're all set! Enjoy using AI Sentinel!**
 
-If you're preparing for the Rabobank interview, practice giving a **5-minute demo**:
+If you're preparing for the SecureBank interview, practice giving a **5-minute demo**:
 1. Show the architecture (2 min)
 2. Run a live analysis (2 min)
 3. Explain business value (1 min)

@@ -1,6 +1,6 @@
 """
 AI Sentinel - Shadow AI Detection Dashboard
-Rabobank Interview Demo - Phase 1 PoC
+Enterprise Demo - Phase 1 PoC
 """
 
 import streamlit as st
@@ -77,8 +77,8 @@ def render_header():
         st.markdown('<div class="sub-header">Shadow AI Detection & Mitigation Platform</div>', unsafe_allow_html=True)
     
     with col2:
-        st.markdown("### Rabobank")
-        st.caption("Phase 1 PoC Demo")
+        st.markdown("### SecureBank")
+        st.caption("Enterprise Demo")
 
 def render_metrics(results: list):
     """Render key metrics dashboard"""
@@ -351,7 +351,7 @@ def main():
         with col2:
             st.markdown("### 👋 Welcome to AI Sentinel")
             st.markdown("""
-            **AI Sentinel** automatically detects and mitigates "Shadow AI" usage within Rabobank.
+            **AI Sentinel** automatically detects and mitigates "Shadow AI" usage within your organization.
             
             **Key Features:**
             - 🔍 Real-time detection of unsanctioned AI tool usage

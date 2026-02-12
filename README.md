@@ -1,19 +1,19 @@
 # 🛡️ AI Sentinel
 
-**Shadow AI Detection & Mitigation Platform for Rabobank**
+**Shadow AI Detection & Mitigation Platform for Financial Institutions**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![OpenAI](https://img.shields.io/badge/powered%20by-OpenAI%20GPT--4-00A67E)](https://openai.com)
 [![Streamlit](https://img.shields.io/badge/built%20with-Streamlit-FF4B4B)](https://streamlit.io)
 
-> **Rabobank Interview Project** - Demonstrating the "Rapid Builder Mindset" through a production-ready Shadow AI detection system deployed in under 1 hour.
+> **Enterprise Demo Project** - Demonstrating the "Rapid Builder Mindset" through a production-ready Shadow AI detection system deployed in under 1 hour.
 
 ---
 
 ## 🎯 Problem Statement
 
 **Shadow AI** is the unauthorized use of AI tools (ChatGPT, Claude, etc.) by employees, creating serious security risks:
-- 💥 **Data Leakage**: Sensitive banking data shared with external AI services
+- 💥 **Data Leakage**: Sensitive financial data shared with external AI services
 - 🚨 **Compliance Violations**: Breach of GDPR and financial regulations
 - 🔓 **Unauthorized Access**: Circumventing approved internal AI platforms
 
@@ -111,12 +111,12 @@ Create a JSON file with this format:
 [
   {
     "timestamp": "2026-02-12T10:15:23Z",
-    "user_id": "john.doe@rabobank.nl",
+    "user_id": "john.doe@securebank.com",
     "department": "Risk Analytics",
     "request_url": "https://chat.openai.com/api/conversation",
     "request_method": "POST",
     "payload_size_kb": 12,
-    "payload_snippet": "Analyze customer data for account NL91RABO...",
+    "payload_snippet": "Analyze customer data for account NL91BANK...",
     "user_agent": "Mozilla/5.0",
     "ip_address": "10.20.30.45"
   }
@@ -200,7 +200,7 @@ RISK_THRESHOLD_MEDIUM=40       # Score above = medium risk
 
 ---
 
-## 💡 Value Proposition for Rabobank
+## 💡 Value Proposition for Financial Institutions
 
 ### Immediate Benefits
 1. **Risk Reduction**: Identify Shadow AI before data breaches occur
@@ -249,7 +249,7 @@ MIT License - feel free to use this as inspiration for your own projects.
 
 ## 👨‍💻 Author
 
-**Built for Rabobank Interview**  
+**Enterprise Demo Project**  
 Demonstrating rapid prototyping, system integration, and the "Rapid Builder Mindset"
 
 ---
@@ -258,13 +258,13 @@ Demonstrating rapid prototyping, system integration, and the "Rapid Builder Mind
 
 - **OpenAI** for GPT-4 API
 - **Streamlit** for the amazing dashboard framework
-- **Rabobank** for the opportunity to showcase these skills
+- **Open Source Community** for making these tools accessible
 
 ---
 
 <div align="center">
 
-**🛡️ Protecting Rabobank's data, one Shadow AI at a time.**
+**🛡️ Protecting enterprise data, one Shadow AI at a time.**
 
 Made with ☕ and ⚡ in under 1 hour
 

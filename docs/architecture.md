@@ -2,7 +2,7 @@
 
 ## Overview
 
-AI Sentinel is a Shadow AI detection and mitigation platform designed to protect Rabobank from unauthorized AI tool usage and potential data breaches.
+AI Sentinel is a Shadow AI detection and mitigation platform designed to protect SecureBank from unauthorized AI tool usage and potential data breaches.
 
 ## High-Level Architecture
 
@@ -108,7 +108,7 @@ flowchart TD
 **Purpose**: Intelligent risk assessment beyond rule-based detection
 
 **Prompt Engineering**:
-- System prompt defines Rabobank security context
+- System prompt defines SecureBank security context
 - User prompt provides detailed request context
 - JSON response format for structured output
 - Temperature set to 0.1 for consistent analysis
@@ -287,7 +287,7 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501"]
 
 ## Future Enhancements
 
-1. **Machine Learning**: Train custom model on Rabobank data
+1. **Machine Learning**: Train custom model on SecureBank data
 2. **Real-time Streaming**: Process logs as they occur
 3. **Browser Extension**: Warn users before Shadow AI usage
 4. **A/B Testing**: Optimize user messaging for migrations

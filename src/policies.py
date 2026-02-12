@@ -1,12 +1,11 @@
-"""
-Rabobank AI Security Policies
+"""SecureBank AI Security Policies
 Defines approved AI tools, data classification, and risk assessment rules.
 """
 
-# Approved AI endpoints (sanctioned by Rabobank)
+# Approved AI endpoints (sanctioned by SecureBank)
 APPROVED_DOMAINS = [
-    "internal-ai.rabobank.com",
-    "ai.rabobank.nl",
+    "internal-ai.securebank.com",
+    "ai.securebank.com",
     "approved-ai-partner.com"
 ]
 
@@ -75,7 +74,7 @@ RISK_CATEGORIES = {
 }
 
 # System prompt template for GPT-4 analysis
-DETECTION_SYSTEM_PROMPT = """You are an AI security analyst for Rabobank, a leading financial institution.
+DETECTION_SYSTEM_PROMPT = """You are an AI security analyst for SecureBank, a leading financial institution.
 
 Your task is to analyze network requests to AI services and assess their security risk level.
 
@@ -86,7 +85,7 @@ EXTERNAL AI SERVICES (require scrutiny):
 {external_services}
 
 RISK ASSESSMENT CRITERIA:
-1. Is the endpoint approved by Rabobank?
+1. Is the endpoint approved by SecureBank?
 2. Does the payload contain sensitive banking data (IBANs, account numbers, customer PII, financial amounts)?
 3. What is the user's department sensitivity level?
 4. Is the payload size unusually large (potential data dump)?
@@ -101,7 +100,7 @@ RESPONSE FORMAT (JSON):
   "user_message": "Friendly message to educate the user (if applicable)"
 }}
 
-Be strict but fair. The goal is to protect Rabobank's data while supporting legitimate AI use.
+Be strict but fair. The goal is to protect SecureBank's data while supporting legitimate AI use.
 """
 
 def get_detection_prompt(approved_domains: list, external_services: list) -> str:
