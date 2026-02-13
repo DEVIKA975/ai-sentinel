@@ -17,7 +17,7 @@
 - 🚨 **Compliance Violations**: Breach of GDPR and financial regulations
 - 🔓 **Unauthorized Access**: Circumventing approved internal AI platforms
 
-**AI Sentinel** automatically detects these threats and redirects users to secure, compliant alternatives.
+**AI Sentinel** automatically detects these threats and redirects users to Secure, compliant alternatives.
 
 ---
 
@@ -90,7 +90,7 @@ graph TD
 |-----------|-----------|---------|
 | **Frontend** | Streamlit | Interactive risk dashboard with real-time metrics |
 | **Detection Engine** | Python + OpenAI GPT-4 | Intelligent Shadow AI detection and risk scoring |
-| **Policy Engine** | Custom Rules | Rabobank-specific security policies and whitelists |
+| **Policy Engine** | Custom Rules | Securebank-specific security policies and whitelists |
 | **Data Layer** | JSON (Phase 1) | Log storage and analysis |
 
 ---
@@ -111,7 +111,7 @@ Create a JSON file with this format:
 [
   {
     "timestamp": "2026-02-12T10:15:23Z",
-    "user_id": "john.doe@securebank.com",
+    "user_id": "john.doe@Securebank.com",
     "department": "Risk Analytics",
     "request_url": "https://chat.openai.com/api/conversation",
     "request_method": "POST",
@@ -130,7 +130,7 @@ Upload via the sidebar and analyze!
 ## 🎨 What Makes This Special
 
 ### 1️⃣ **Built for Speed** ⚡
-From zero to working demo in **under 1 hour** - exactly what Rabobank values in the "Rapid Builder Mindset."
+From zero to working demo in **under 1 hour** - exactly what Securebank values in the "Rapid Builder Mindset."
 
 ### 2️⃣ **Production-Ready Architecture** 🏗️
 Not just a prototype - designed with real-world scalability:
@@ -192,7 +192,7 @@ RISK_THRESHOLD_MEDIUM=40       # Score above = medium risk
 
 | Category | Score Range | Example Trigger | Action |
 |----------|-------------|-----------------|--------|
-| ✅ **APPROVED** | 0-20 | Request to `internal-ai.rabobank.com` | Allow |
+| ✅ **APPROVED** | 0-20 | Request to `internal-ai.Securebank.com` | Allow |
 | 🔵 **LOW_RISK** | 21-40 | External AI with generic questions | Monitor |
 | 🟡 **MEDIUM_RISK** | 41-70 | External AI with business context | Alert user |
 | 🔴 **HIGH_RISK** | 71-90 | External AI with PII/financial data | Block + escalate |
