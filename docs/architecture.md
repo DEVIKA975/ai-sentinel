@@ -1,8 +1,8 @@
-# AI Sentinel - System Architecture
+# AI Sentinel: Ghost AI Architecture (Phase 1)
 
 ## Overview
 
-AI Sentinel is a Shadow AI detection and mitigation platform designed to protect SecureBank from unauthorized AI tool usage and potential data breaches.
+AI Sentinel is a Ghost AI detection and mitigation platform designed to protect SecureBank from unauthorized AI tool usage and potential data breaches.
 
 ## High-Level Architecture
 
@@ -51,7 +51,7 @@ graph TB
 
 ### 1. Detection Engine (`src/detector.py`)
 
-**Purpose**: Core intelligence for identifying Shadow AI usage
+**Purpose**: Core intelligence for identifying Ghost AI usage
 
 **Capabilities**:
 - Pre-screening with rule-based filters (fast path for approved requests)
@@ -82,7 +82,7 @@ flowchart TD
 
 **Components**:
 - **Approved Domains**: Whitelist of sanctioned AI services
-- **External AI Services**: Known Shadow AI platforms
+- **External AI Services**: Known Ghost AI platforms
 - **Sensitive Patterns**: Regex for IBAN, account numbers, PII
 - **Department Risk Levels**: Risk profiles by business unit
 - **Risk Categories**: APPROVED, LOW_RISK, MEDIUM_RISK, HIGH_RISK, CRITICAL
@@ -289,7 +289,7 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501"]
 
 1. **Machine Learning**: Train custom model on SecureBank data
 2. **Real-time Streaming**: Process logs as they occur
-3. **Browser Extension**: Warn users before Shadow AI usage
+3. **Browser Extension**: Warn users before Ghost AI usage
 4. **A/B Testing**: Optimize user messaging for migrations
 5. **Integration Hub**: Connect with SIEM, ServiceNow, Jira
 

@@ -1,4 +1,4 @@
-# Quick Start Guide
+# 🚀 AI Sentinel Quick Start Guide: Ghost AI Detection
 
 This guide will get you from zero to running AI Sentinel in **5 minutes**.
 
@@ -72,7 +72,7 @@ Your browser should automatically open to the application!
 ## Step 5: Try the Demo
 
 1. In the sidebar, **check "Use sample logs"** (should already be checked)
-2. Click the big **"🔍 Analyze Shadow AI Threats"** button
+2. Click the big **"🔍 Analyze Ghost AI Threats"** button
 3. Wait 10-30 seconds for GPT-4 to analyze the logs
 4. Explore the dashboard!
 
@@ -119,7 +119,7 @@ Create a JSON file with this format:
 [
   {
     "timestamp": "2026-02-12T10:15:23Z",
-    "user_id": "user@SecureBank.nl",
+    "user_id": "user@the Organization.nl",
     "department": "Engineering",
     "request_url": "https://chat.openai.com/api/conversation",
     "request_method": "POST",
@@ -189,7 +189,7 @@ docker run -p 8501:8501 --env-file .env ai-sentinel
 
 **🎉 You're all set! Enjoy using AI Sentinel!**
 
-If you're preparing for the SecureBank interview, practice giving a **5-minute demo**:
+If you're preparing for the the Organization interview, practice giving a **5-minute demo**:
 1. Show the architecture (2 min)
 2. Run a live analysis (2 min)
 3. Explain business value (1 min)

@@ -1,4 +1,4 @@
-# GitHub Upload Instructions - AI Sentinel
+# GitHub Upload Instructions - AI Sentinel: Ghost AI Upload Guide
 
 ## Quick Upload Guide
 
@@ -14,7 +14,7 @@ Follow these steps to upload your AI Sentinel project to GitHub.
 
 2. **Fill in the repository details**:
    - **Repository name**: `ai-sentinel`
-   - **Description**: `Shadow AI Detection & Mitigation Platform - Built with GPT-4, Streamlit, and Python`
+   - **Description**: `Ghost AI Detection & Mitigation Platform - Built with GPT-4, Streamlit, and Python`
    - **Visibility**: Choose **Public** (to showcase in your portfolio)
    - **DO NOT** check "Initialize this repository with a README" (you already have one!)
    - Leave all other checkboxes unchecked
@@ -44,10 +44,9 @@ git branch -M main
 git push -u origin main
 ```
 
-### Example with actual username:
-If your GitHub username is `devikagarwal`, the command would be:
+### Your Repository Command:
 ```powershell
-git remote add origin https://github.com/devikagarwal/ai-sentinel.git
+git remote add origin https://github.com/DEVIKA975/ai-sentinel.git
 git branch -M main
 git push -u origin main
 ```
@@ -92,12 +91,12 @@ After successful push:
 
 ### Add Topics:
 1. Click the ⚙️ gear icon next to "About"
-2. Add topics: `ai`, `security`, `shadow-ai`, `gpt4`, `streamlit`, `python`, `machine-learning`
+2. Add topics: `ai`, `security`, `ghost-ai`, `gpt4`, `streamlit`, `python`, `machine-learning`
 3. Click "Save changes"
 
 ### Set Repository Description:
 The description should already be there, but verify it shows:
-> Shadow AI Detection & Mitigation Platform - Built with GPT-4, Streamlit, and Python
+> Ghost AI Detection & Mitigation Platform - Built with GPT-4, Streamlit, and Python
 
 ---
 

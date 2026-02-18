@@ -1,13 +1,19 @@
-"""SecureBank AI Security Policies
+"""AI Security Policies
 Defines approved AI tools, data classification, and risk assessment rules.
 """
+import os
 
-# Approved AI endpoints (sanctioned by SecureBank)
-APPROVED_DOMAINS = [
-    "internal-ai.securebank.com",
-    "ai.securebank.com",
-    "approved-ai-partner.com"
-]
+# Approved AI endpoints (sanctioned by the organization)
+# Load from environment variable (comma-separated) or use defaults
+env_domains = os.getenv("APPROVED_DOMAINS", "")
+if env_domains:
+    APPROVED_DOMAINS = [d.strip() for d in env_domains.split(",") if d.strip()]
+else:
+    APPROVED_DOMAINS = [
+        "internal-ai.company.local",
+        "ai.company.internal",
+        "approved-partner.com"
+    ]
 
 # External AI services (require scrutiny)
 EXTERNAL_AI_SERVICES = [
@@ -19,6 +25,14 @@ EXTERNAL_AI_SERVICES = [
     "gemini.google.com",
     "api.cohere.ai",
     "bard.google.com"
+]
+
+# Known malicious domains (local fallback for demo/performance)
+MALICIOUS_DOMAINS = [
+    "evil-phishing-site.com",
+    "malware-distributor.net",
+    "suspicious-internal-proxy.info",
+    "data-exfiltration-test.org"
 ]
 
 # Sensitive data patterns (regex-based detection)
@@ -73,8 +87,8 @@ RISK_CATEGORIES = {
     }
 }
 
-# System prompt template for GPT-4 analysis
-DETECTION_SYSTEM_PROMPT = """You are an AI security analyst for SecureBank, a leading financial institution.
+# System prompt template for LLM analysis
+DETECTION_SYSTEM_PROMPT = """You are an AI security analyst for a leading financial institution.
 
 Your task is to analyze network requests to AI services and assess their security risk level.
 
@@ -85,7 +99,7 @@ EXTERNAL AI SERVICES (require scrutiny):
 {external_services}
 
 RISK ASSESSMENT CRITERIA:
-1. Is the endpoint approved by SecureBank?
+1. Is the endpoint approved by the organization?
 2. Does the payload contain sensitive banking data (IBANs, account numbers, customer PII, financial amounts)?
 3. What is the user's department sensitivity level?
 4. Is the payload size unusually large (potential data dump)?
@@ -100,7 +114,7 @@ RESPONSE FORMAT (JSON):
   "user_message": "Friendly message to educate the user (if applicable)"
 }}
 
-Be strict but fair. The goal is to protect SecureBank's data while supporting legitimate AI use.
+Be strict but fair. The goal is to protect the organization's data while supporting legitimate AI use.
 """
 
 def get_detection_prompt(approved_domains: list, external_services: list) -> str:

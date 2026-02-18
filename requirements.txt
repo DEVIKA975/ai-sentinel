@@ -8,3 +8,17 @@ pandas==2.2.0
 
 # Enhanced UI
 plotly==5.18.0
+
+# Local LLM support
+ollama==0.1.7
+
+# Testing & Quality
+pytest==8.0.0
+flake8==7.0.0
+bandit==1.7.7
+
+# Vector DB & Embeddings
+faiss-cpu==1.7.4
+langchain-huggingface==0.1.0
+sentence-transformers==2.2.2
+langchain-community==0.3.0

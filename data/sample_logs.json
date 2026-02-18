@@ -1,9 +1,9 @@
 [
     {
         "timestamp": "2026-02-12T10:15:23Z",
-        "user_id": "john.doe@securebank.com",
+        "user_id": "john.doe@company.internal",
         "department": "Risk Analytics",
-        "request_url": "https://internal-ai.securebank.com/api/chat",
+        "request_url": "https://internal-ai.company.local/api/chat",
         "request_method": "POST",
         "payload_size_kb": 12,
         "payload_snippet": "What are the current credit risk metrics for Q1 2026?",
@@ -12,7 +12,7 @@
     },
     {
         "timestamp": "2026-02-12T10:22:17Z",
-        "user_id": "sarah.chen@securebank.com",
+        "user_id": "sarah.chen@company.internal",
         "department": "Marketing",
         "request_url": "https://chat.openai.com/api/conversation",
         "request_method": "POST",
@@ -23,7 +23,7 @@
     },
     {
         "timestamp": "2026-02-12T10:35:42Z",
-        "user_id": "alex.van.dam@securebank.com",
+        "user_id": "alex.van.dam@company.internal",
         "department": "Fraud Detection",
         "request_url": "https://api.anthropic.com/v1/messages",
         "request_method": "POST",
@@ -34,7 +34,7 @@
     },
     {
         "timestamp": "2026-02-12T11:02:55Z",
-        "user_id": "mike.johnson@securebank.com",
+        "user_id": "mike.johnson@company.internal",
         "department": "IT Security",
         "request_url": "https://gemini.google.com/api/generate",
         "request_method": "POST",
@@ -45,7 +45,7 @@
     },
     {
         "timestamp": "2026-02-12T11:18:33Z",
-        "user_id": "lisa.martinez@securebank.com",
+        "user_id": "lisa.martinez@company.internal",
         "department": "Customer Service",
         "request_url": "https://chatgpt.com/g/g-custom",
         "request_method": "POST",
@@ -56,9 +56,9 @@
     },
     {
         "timestamp": "2026-02-12T11:45:09Z",
-        "user_id": "emma.de.vries@securebank.com",
+        "user_id": "emma.de.vries@company.internal",
         "department": "Compliance",
-        "request_url": "https://internal-ai.securebank.com/api/chat",
+        "request_url": "https://internal-ai.company.local/api/chat",
         "request_method": "POST",
         "payload_size_kb": 22,
         "payload_snippet": "Summarize GDPR requirements for customer data retention",
@@ -67,7 +67,7 @@
     },
     {
         "timestamp": "2026-02-12T12:03:12Z",
-        "user_id": "david.patel@securebank.com",
+        "user_id": "david.patel@company.internal",
         "department": "Data Engineering",
         "request_url": "https://api.cohere.ai/v1/generate",
         "request_method": "POST",
@@ -78,9 +78,9 @@
     },
     {
         "timestamp": "2026-02-12T12:21:45Z",
-        "user_id": "rachel.wong@securebank.com",
+        "user_id": "rachel.wong@company.internal",
         "department": "HR",
-        "request_url": "https://internal-ai.securebank.com/api/chat",
+        "request_url": "https://internal-ai.company.local/api/chat",
         "request_method": "POST",
         "payload_size_kb": 5,
         "payload_snippet": "Draft a job description for Senior DevOps Engineer",
@@ -89,7 +89,7 @@
     },
     {
         "timestamp": "2026-02-12T13:14:28Z",
-        "user_id": "tom.wilson@securebank.com",
+        "user_id": "tom.wilson@company.internal",
         "department": "Investment Banking",
         "request_url": "https://chat.openai.com/api/conversation",
         "request_method": "POST",
@@ -100,7 +100,7 @@
     },
     {
         "timestamp": "2026-02-12T14:07:51Z",
-        "user_id": "sophie.laurent@securebank.com",
+        "user_id": "sophie.laurent@company.internal",
         "department": "Product Management",
         "request_url": "https://claude.ai/api/chat",
         "request_method": "POST",
@@ -108,5 +108,16 @@
         "payload_snippet": "Help me create a product roadmap for mobile banking app Q2 features",
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
         "ip_address": "10.20.34.82"
+    },
+    {
+        "timestamp": "2026-02-12T14:45:00Z",
+        "user_id": "mark.suspicious@company.internal",
+        "department": "Fraud Detection",
+        "request_url": "https://evil-phishing-site.com/login",
+        "request_method": "GET",
+        "payload_size_kb": 1,
+        "payload_snippet": "",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "ip_address": "10.20.25.12"
     }
 ]

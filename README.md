@@ -1,30 +1,28 @@
-# 🛡️ AI Sentinel
-
-**Shadow AI Detection & Mitigation Platform for Financial Institutions**
+# 🛡️ AI Sentinel: Premium Ghost AI Monitoring & Incident Response
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![OpenAI](https://img.shields.io/badge/powered%20by-OpenAI%20GPT--4-00A67E)](https://openai.com)
 [![Streamlit](https://img.shields.io/badge/built%20with-Streamlit-FF4B4B)](https://streamlit.io)
 
-> **Enterprise Demo Project** - Demonstrating the "Rapid Builder Mindset" through a production-ready Shadow AI detection system deployed in under 1 hour.
+> **Enterprise Demo Project** - Demonstrating the "Rapid Builder Mindset" through a production-ready Ghost AI detection system deployed in under 1 hour.
 
 ---
 
 ## 🎯 Problem Statement
 
-**Shadow AI** is the unauthorized use of AI tools (ChatGPT, Claude, etc.) by employees, creating serious security risks:
+**Ghost AI** is the unauthorized use of AI tools (ChatGPT, Claude, etc.) by employees, creating serious security risks:
 - 💥 **Data Leakage**: Sensitive financial data shared with external AI services
 - 🚨 **Compliance Violations**: Breach of GDPR and financial regulations
 - 🔓 **Unauthorized Access**: Circumventing approved internal AI platforms
 
-**AI Sentinel** automatically detects these threats and redirects users to Secure, compliant alternatives.
+**AI Sentinel is an agentic security platform designed to detect, analyze, and mitigate the risks of **Ghost AI** (unsanctioned AI usage) within corporate networks.
 
 ---
 
 ## ✨ Features
 
 ### Phase 1 (PoC - Ready Now)
-- ✅ **Real-time Shadow AI Detection** via network log analysis
+- ✅ **Real-time Ghost AI Detection** via network log analysis
 - ✅ **GPT-4 Powered Risk Assessment** with intelligent categorization
 - ✅ **Sensitive Data Scanner** (IBANs, account numbers, PII)
 - ✅ **Interactive Dashboard** with metrics and visualizations
@@ -89,8 +87,8 @@ graph TD
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
 | **Frontend** | Streamlit | Interactive risk dashboard with real-time metrics |
-| **Detection Engine** | Python + OpenAI GPT-4 | Intelligent Shadow AI detection and risk scoring |
-| **Policy Engine** | Custom Rules | Securebank-specific security policies and whitelists |
+| **Detection Engine** | Python + OpenAI GPT-4 | Intelligent Ghost AI detection and risk scoring |
+| **Policy Engine** | Custom Rules | the Organization-specific security policies and whitelists |
 | **Data Layer** | JSON (Phase 1) | Log storage and analysis |
 
 ---
@@ -100,7 +98,7 @@ graph TD
 ### Option 1: Sample Data (Instant Demo)
 1. Launch the app: `streamlit run app.py`
 2. Check **"Use sample logs"** in the sidebar
-3. Click **"🔍 Analyze Shadow AI Threats"**
+3. Click **"🔍 Analyze Ghost AI Threats"**
 4. Explore the results in the dashboard
 
 ### Option 2: Upload Your Own Logs
@@ -111,7 +109,7 @@ Create a JSON file with this format:
 [
   {
     "timestamp": "2026-02-12T10:15:23Z",
-    "user_id": "john.doe@Securebank.com",
+    "user_id": "john.doe@the Organization.com",
     "department": "Risk Analytics",
     "request_url": "https://chat.openai.com/api/conversation",
     "request_method": "POST",
@@ -130,7 +128,7 @@ Upload via the sidebar and analyze!
 ## 🎨 What Makes This Special
 
 ### 1️⃣ **Built for Speed** ⚡
-From zero to working demo in **under 1 hour** - exactly what Securebank values in the "Rapid Builder Mindset."
+From zero to working demo in **under 1 hour** - exactly what the Organization values in the "Rapid Builder Mindset."
 
 ### 2️⃣ **Production-Ready Architecture** 🏗️
 Not just a prototype - designed with real-world scalability:
@@ -155,7 +153,7 @@ Simple setup, clear code, comprehensive docs - makes onboarding effortless.
 ai-sentinel/
 ├── app.py                  # Main Streamlit dashboard
 ├── src/
-│   ├── detector.py        # Shadow AI detection engine
+│   ├── detector.py        # Ghost AI detection engine
 │   └── policies.py        # Security policies & rules
 ├── data/
 │   └── sample_logs.json   # Demo data
@@ -192,7 +190,7 @@ RISK_THRESHOLD_MEDIUM=40       # Score above = medium risk
 
 | Category | Score Range | Example Trigger | Action |
 |----------|-------------|-----------------|--------|
-| ✅ **APPROVED** | 0-20 | Request to `internal-ai.Securebank.com` | Allow |
+| ✅ **APPROVED** | 0-20 | Request to `internal-ai.the Organization.com` | Allow |
 | 🔵 **LOW_RISK** | 21-40 | External AI with generic questions | Monitor |
 | 🟡 **MEDIUM_RISK** | 41-70 | External AI with business context | Alert user |
 | 🔴 **HIGH_RISK** | 71-90 | External AI with PII/financial data | Block + escalate |
@@ -203,7 +201,7 @@ RISK_THRESHOLD_MEDIUM=40       # Score above = medium risk
 ## 💡 Value Proposition for Financial Institutions
 
 ### Immediate Benefits
-1. **Risk Reduction**: Identify Shadow AI before data breaches occur
+1. **Risk Reduction**: Identify Ghost AI before data breaches occur
 2. **Compliance**: Automated GDPR/regulatory violation detection
 3. **User Education**: Redirect employees to approved AI platforms
 4. **Visibility**: Executive dashboard for AI usage patterns
@@ -264,7 +262,7 @@ Demonstrating rapid prototyping, system integration, and the "Rapid Builder Mind
 
 <div align="center">
 
-**🛡️ Protecting enterprise data, one Shadow AI at a time.**
+**🛡️ Protecting enterprise data, one Ghost AI at a time.**
 
 Made with ☕ and ⚡ in under 1 hour
 

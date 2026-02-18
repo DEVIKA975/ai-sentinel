@@ -1,4 +1,4 @@
-# GitHub Setup Instructions
+# 🛠️ GitHub Repository Setup: AI Sentinel (Ghost AI Rebrand)
 
 ## Quick Setup for Your GitHub Repository
 
@@ -6,7 +6,7 @@
 
 1. Go to [GitHub](https://github.com/new)
 2. Repository name: `ai-sentinel`
-3. Description: `Shadow AI Detection & Mitigation Platform for SecureBank`
+3. Description: `Ghost AI Detection & Mitigation Platform for the Organization`
 4. Make it **Public** (to showcase to interviewers)
 5. **Do NOT** initialize with README (we already have one)
 6. Click "Create repository"
@@ -39,11 +39,11 @@ git push -u origin main
 #### Add Topics (for discoverability)
 1. Go to your repository page
 2. Click the gear icon next to "About"
-3. Add topics: `ai`, `security`, `SecureBank`, `shadow-ai`, `gpt4`, `streamlit`, `python`
+3. Add topics: `ai`, `security`, `the Organization`, `ghost-ai`, `gpt4`, `streamlit`, `python`
 
 #### Add Repository Description
 ```
-Shadow AI Detection & Mitigation Platform - SecureBank Interview Project. Built with GPT-4, Streamlit, and Python.
+Ghost AI Detection & Mitigation Platform - the Organization Interview Project. Built with GPT-4, Streamlit, and Python.
 ```
 
 #### Enable GitHub Pages (Optional - for docs)
@@ -55,7 +55,7 @@ Shadow AI Detection & Mitigation Platform - SecureBank Interview Project. Built 
 
 Mark Phase 1 as a release:
 ```powershell
-git tag -a v1.0.0 -m "Phase 1 PoC: Shadow AI Detection with GPT-4"
+git tag -a v1.0.0 -m "Phase 1 PoC: Ghost AI Detection with GPT-4"
 git push origin v1.0.0
 ```
 
@@ -89,7 +89,7 @@ jobs:
 
 ## Interview Demonstration URL
 
-Share this with SecureBank:
+Share this with the Organization:
 ```
 https://github.com/YOUR-USERNAME/ai-sentinel
 ```
