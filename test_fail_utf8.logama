@@ -1,6 +1,0 @@
-﻿============================= test session starts =============================
-platform win32 -- Python 3.13.3, pytest-9.0.2, pluggy-1.6.0
-rootdir: C:\Users\devik\Desktop\rabodemo
-plugins: anyio-4.12.1, langsmith-0.7.1
-collected 4 items
-

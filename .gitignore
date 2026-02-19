@@ -44,3 +44,6 @@ build/
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Docker
+.dockerignore

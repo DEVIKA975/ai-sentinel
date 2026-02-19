@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  ai-sentinel:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4}
+      - MAX_TOKENS=${MAX_TOKENS:-1000}
+      - TEMPERATURE=${TEMPERATURE:-0.1}
+      - RISK_THRESHOLD_HIGH=${RISK_THRESHOLD_HIGH:-75}
+      - RISK_THRESHOLD_MEDIUM=${RISK_THRESHOLD_MEDIUM:-40}
+      - APPROVED_DOMAINS=${APPROVED_DOMAINS:-internal-ai.local,ai.company.com}
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Add Redis for session management
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    profiles:
+      - redis
+
+volumes:
+  redis_data:
