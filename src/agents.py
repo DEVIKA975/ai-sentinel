@@ -7,10 +7,17 @@ import os
 import json
 import operator
 from typing import Dict, List, Any, TypedDict, Annotated
-from langchain_openai import ChatOpenAI
-from langchain_community.chat_models import ChatOllama
-from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
-from langgraph.graph import StateGraph, END
+
+# Simplified imports for CI compatibility
+try:
+    from langchain_openai import ChatOpenAI
+    from langchain_community.chat_models import ChatOllama
+    from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
+    from langgraph.graph import StateGraph, END
+    LANGCHAIN_AVAILABLE = True
+except ImportError:
+    LANGCHAIN_AVAILABLE = False
+    BaseMessage = Any
 
 from src.policies import APPROVED_DOMAINS, EXTERNAL_AI_SERVICES, get_detection_prompt
 from src.webhooks import WebhookManager, simulate_create_incident
@@ -33,18 +40,23 @@ class SecurityAgent:
         self.provider = provider
         self.api_key = api_key
         
-        # Initialize LLM
-        if provider == "ollama":
-            self.llm = ChatOllama(model=os.getenv("OLLAMA_MODEL", "llama3.2:1b"), temperature=0.1)
-        else:
-            self.llm = ChatOpenAI(
-                model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
-                api_key=api_key or os.getenv("OPENAI_API_KEY"),
-                temperature=0.1
-            )
+        # Initialize LLM only if LangChain is available
+        if LANGCHAIN_AVAILABLE:
+            if provider == "ollama":
+                self.llm = ChatOllama(model=os.getenv("OLLAMA_MODEL", "llama3.2:1b"), temperature=0.1)
+            else:
+                self.llm = ChatOpenAI(
+                    model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+                    api_key=api_key or os.getenv("OPENAI_API_KEY"),
+                    temperature=0.1
+                )
             
-        self.workflow = self._create_workflow()
-        self.app = self.workflow.compile()
+            self.workflow = self._create_workflow()
+            self.app = self.workflow.compile()
+        else:
+            self.llm = None
+            self.workflow = None
+            self.app = None
 
     def _create_workflow(self):
         """Build the LangGraph state machine"""
