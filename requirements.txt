@@ -18,5 +18,5 @@ flake8==7.0.0
 bandit==1.7.7
 
 # Vector DB & Embeddings
-faiss-cpu==1.7.4
+faiss-cpu==1.8.0
 sentence-transformers==2.2.2
