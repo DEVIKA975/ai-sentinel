@@ -4,7 +4,7 @@ openai==1.12.0
 python-dotenv==1.0.1
 
 # Data processing
-pandas==2.2.0
+pandas==2.1.4
 
 # Enhanced UI
 plotly==5.18.0
