@@ -184,7 +184,7 @@ class GhostAIDetector:
         }
         
         try:
-            response = requests.get(url, headers=headers)
+            response = requests.get(url, headers=headers, timeout=10)
             if response.status_code == 200:
                 data = response.json()
                 stats = data['data']['attributes']['last_analysis_stats']

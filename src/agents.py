@@ -120,7 +120,7 @@ class SecurityAgent:
         
         # Trigger automated mitigation if Critical
         if risk == "CRITICAL":
-            ip = log.get("ip_address", "0.0.0.0")
+            ip = log.get("ip_address", "0.0.0.0")  # nosec B104
             WebhookManager.trigger_mitigation(
                 action="BLOCK_IP",
                 target=ip,
